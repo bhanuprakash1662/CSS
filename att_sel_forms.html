@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    [type]{
+        background-color: rgb(8, 51, 51);
+    }
+    [type="email"]{
+        background-color: rgb(175, 83, 7);
+    }
+    [id ~="pas"]{
+        background-color: rgb(187, 169, 194);
+    }
+     [for^="fi" ]{
+        background-color: rgb(187, 121, 21);
+        padding: 6px;
+
+    }
+    [for^="ln" ]{
+        background-color: rgb(187, 121, 21);
+        padding: 6px;
+
+    }
+    
+    P{
+        border: 1PX solid;
+        background-color: brown;
+    }
+    [placeholder $="ber"]{
+        background-color: rgb(138, 33, 33);
+    }
+    [name *="num"]{
+        background-color: rgb(123, 165, 44);
+    }
+    [for="email"]{
+        background-color: rgb(187, 121, 21) ;
+        padding: 6px;
+    }
+    [for|="pas"]{
+        background-color:  rgb(187, 121, 21);
+        padding: 6px;
+    }
+    [for$="call"]{
+        background-color:  rgb(187, 121, 21);
+        padding: 6px;
+    }
+    [for*=um]{
+        background-color:  rgb(187, 121, 21);
+        padding: 6px;
+    }
+    [type="submit"]{
+        background-color: rgb(31, 102, 143);
+        padding: 8px;
+    }
+    .ty{
+        background-color: rgb(93, 141, 141);
+    }
+ 
+    
+  
+</style>
+<body>
+    <fieldset>
+        <div class="ty">
+        <p><CENTER><B>APPLICATION FORM</B></CENTER></p>
+    <form = "md">
+        
+        <label for="firstname">Firstname:</label>
+        <input type="text" id="firstname"name="firstname" placeholder="Enter first name"><br><br>
+        <label for="lname">Lastname:</label>
+        <input type="text" id="lname" name="lname" placeholder="Enter last name"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email@.com"><br><br>
+        <label for="pas">Password:</label>
+        <input type="password" id="pas s" name="pas" ><BR><BR>
+        <label for="call">Contact Number:</label>
+        <input type="tel" id="call" name="call" placeholder="contact number"><br><br>
+        <label for="num">Enter your AGE:</label>
+        <input type="number" id="num" name="num" value="num"><br><Br>
+        <input type="submit">
+        
+
+
+    </form>
+</div>
+</fieldset>
+</body>
+
+</html>
