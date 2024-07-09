@@ -4,27 +4,396 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <style>
     .qw{
-        border :5px soild rgb(46, 37, 37);
-        height: 100vh;
+        border :5px soild rgb(15, 13, 13);
+        height: 1200px;
         width: 100vw;
+        background-color:white; 
         
     }
     .qe{
+        height: 50px;
+        width: 100vw;
+        background-color: rgb(58, 179, 102);
+        margin-top: 10px;
+    }
+    .qf{
+        height: 800px;
+        width: 100vw;
         border: 1px solid black;
-        height: 490px;
-        background-color: rgba(0, 0, 0, 0.795);
+        margin-top: -50px;
+        
+    }
+    .left{
+        width: 550px;
+        height: 750px;
+        border: 1px solid  rgb(133, 129, 129);
+        display: flex;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        margin-top: -755px;
+    }
+    .head1{
+        height: 50px;
+        width: 550px;
+        border: 1px solid;
+        background-color:#f1efed;
+        padding: 10px;
+       
 
     }
+    .search{
+        height: 120px;
+        border: 1px solid rgb(245, 242, 242);
+        width: 550px;
+        background-color: white(29, 19, 19);
+       
+        margin-top: -28PX;
+        margin-left: -13px;
+    }
+    .av{
+        border: 1px solid rgb(155, 151, 151);
+        border-radius: 50px;
+    }
+    .p1{
+        margin-top: -50px;
+        margin-left:480px;
+        font-size: 35px;
+    }
+    .p2{
+        margin-top: -88px;
+        margin-left:360px;
+        font-size: 40px;
+        
+    }
+    .p3{
+        border:1px solid rgb(175, 173, 173);
+        width: 500px;
+        height: 30px;
+        margin-left: 30px;
+        border-radius: 10px;
+        margin-top: 20px;
+        font-size: 30px;
+        opacity: 0.6;
+    }
+    .searchsy{
+        margin-left: 480px;
+        font-size: 30px;
+         margin-top: -60px;
+       
+    }
+    .all{
+        border: 1px solid rgb(168, 166, 166);
+        width: 30px;
+        border-radius: 10PX;
+        padding:4px;
+        margin-left: 10px;
+        margin-top: -10px;
+        background-color: rgb(71, 110, 71);
+
+    }
+    .unread{
+        border: 1px solid rgb(151, 147, 147);
+        width: 50px;
+        border-radius: 10PX;
+        padding: 4px;
+        margin-top: -46px;
+        margin-left: 65px;
+    }
+    .group{
+        border: 1px solid rgb(153, 150, 150);
+        width: 50px;
+        border-radius: 10px;
+        padding: 4px;
+        margin-top: -46px;
+        margin-left: 140px;
+    }
+    [class ^= "chat"]{
+        border: 1px solid rgb(85, 78, 78);
+        display: flex;
+        flex-wrap: wrap;
+        height: 80px;
+        width: 550px;
+        margin-left: -12px;
+    }
+    .right{
+        border: 1px solid rgb(122, 121, 121);
+        height: 750px;
+        width: 1202px;
+        margin-left: 552px;
+        margin-top:50px;
+        
+    }
+    .rtop{
+        border: 1px solid rgb(129, 126, 126);
+        height: 70px;
+        width: 1202px;
+        background-color: rgb(224, 215, 215);
+    }
+    .rbot{
+        border: 1px solid rgb(134, 132, 132);
+        height: 70px;
+        width: 1202px;
+        margin-top: 1px;
+        background-color: rgb(224, 215, 215);
+
+
+        
+        
+    }
+    .rmid{
+        border: 1px solid rgb(102, 99, 99);
+        height: 600px;
+        width: 1202px;
+    }
     
+    .smile{
+        font-size: 50px;
+        margin-top: 8px;
+        margin-left: 10px;
+        
+    }
+    .text{
+        border: 1px solid black;
+        height: 50px;
+        width: 950px;
+        margin-top: -110px;
+        margin-left: 150px;
+        font-size: 25px;
+        border-radius: 10px;
+        opacity: 0.4;
+    }
+    .mike{
+        font-size: 50px;
+        margin-top: -80px;
+        margin-left: 1130px;
+    }
+    .per1{
+        border: 1px solid white;
+        height: 60px;
+        width: 60px;
+        border-radius: 30px;
+        margin-top:10px;
+        margin-left: 6px;
+    }
+    .pe1{
+        font-size: 25px;
+        margin-left: 20px;
+        margin-top: 10px;
+       
+    }
+    .pee1{
+        font-size: 20px;
+        margin-top: 50px;
+        margin-left:-60px;
+        opacity: 0.6;
+       
+    }
+    .peee1{
+        margin-left: 470px;
+        margin-top: -80px;
+    }
+    .pee11{
+        margin-left:-180px;
+        font-size: 20px;
+        margin-top:45px;
+        opacity: 0.6;
+    }
+    .pee12{
+        margin-left: -100px;
+        margin-top:50px ;  
+        opacity: 0.6; 
+    }
+    .sym{
+        font-size: 40px;
+        margin-top: -55px;
+        margin-left: 1080px;  
+    }
+   .hey,.send,.hmmm{
+    height: 80px;
+    width: 300px;
+    text-decoration-line: none;
+    color: black;
+
+   }
+   .hm{
     
+    text-decoration-line: none;
+    color: black;
+    width: 200px;
+
+   }
+   .rmid{
+    background-color: rgb(207, 223, 223);
+   }
+   .h{
+    position: relative;
+    margin-left: -358px;
+    margin-top: 30px;
+    font-size: 20px;
+    text-decoration-line:none ;
+    color: black;
+    opacity:0.6 ;
+   }
+   .hii{
+    text-decoration-line:none ;
+    color: black;
+    margin-left: -300px;
+   }
+ 
 
 </style>
 <body>
     <div class="qw">
         <div class="qe"></div>
+        <div class="qf">
+            <div class="right">
+                <div class="rtop">
+                     <iframe name="mysctop"  height="70px" width="2000"></iframe>
+                     <p class="sym"><ion-icon name="call-outline"></ion-icon><ion-icon name="videocam-outline"></ion-icon><ion-icon name="ellipsis-vertical-outline"></ion-icon></p>
+                     
+                    </div>
+                <div class="rmid">
+                    <iframe name="myscmid"  height="600" width="1202px"></iframe>
+                    
+                    
+                </div>
+                <div class="rbot">
+                    <p class="smile"><ion-icon name="happy-outline"></ion-icon>
+                        <ion-icon name="add-outline"></ion-icon></p>
+                        <p class="text">Type a message</p>
+                    <p class="mike"><ion-icon name="mic"></ion-icon></p>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+           
+            
+            <div class="left">
+                <div class="head1"><img class="av"    src="./images/avathar.jpg" height="50px" width="50px" alt="" >
+                   <p class="p1"><ion-icon name="ellipsis-vertical-outline"></ion-icon></p> 
+                   <p class="p2"><ion-icon name="sync-circle-outline"></ion-icon><ion-icon name="people-circle-outline"></ion-icon><ion-icon name="chatbubble-ellipses-outline"></ion-icon></p>
+                    <div class="search"><p class="p3">search <p class="searchsy"><ion-icon name="search-outline"></ion-icon></p></p>
+                    <p class="all">All</p>
+                    <p class="unread">Unread</p>
+                    <p class="group">Group</p></div>
+                  
+                    <div class="chat"><img class="per1"   src="./images/passport.jpg" alt="" height="60px" width="60px">
+                        <p class="pe1">Rohan</p><br><br>
+                        
+                        <a   class="hey" href="./chathead.html" target="mysctop"><a class="h" href="./chatone.html" target="myscmid"><p>Hey!!</p></a></a>
+                        
+                        <span class="peee1">10:20pm</span>
+
+                    </div>
+                    <div class="chat1"><img class="per1"   src="./images/sun.jpg" alt="" height="60px" width="60px">
+                        <p class="pe1">Sunny</p><br><br>
+                        <a class="send" href="./chathead1.html" target="mysctop" > <a     class="hii"     href="./chattwo.html" target="myscmid"><p class="pee1">Send me the books</p></a></a>
+                        <span class="peee1">9:15pm</span>
+
+                    
+                    </div>
+                    <div class="chat2"><img class="per1"   src="./images/virat.jpg" alt="" height="60px" width="60px">
+                        <p class="pe1">Phaneendra shetty</p><br><br>
+                        <a class="hm" href="./chathead2.html" target="mysctop" ><p class="pee11">hmmm</p></a>
+                        <span class="peee1">9:00pm</span>
+
+                    
+                    </div>
+                    <div class="chat3"><img class="per1"   src="./images/forest.jpg" alt="" height="60px" width="60px">
+                        <p class="pe1">Prashanth</p><br><br>
+                        <p class="pee12">Rahul gaditho undi ra</p>
+                        <span class="peee1">7:20pm</span>
+
+                    
+                    </div>
+                    <div class="chat4"><img class="per1"   src="./images/dhoni.jpg" alt="" height="60px" width="60px">
+                        <p class="pe1">Rahul</p><br><br>
+                        <p class="pee1">chepu raa</p>
+                        <span class="peee1">5:35pm</span>
+
+                    
+                    </div>
+                    <div class="chat5"><img class="per1"   src="./images/rock.jpg" alt="" height="60px" width="60px">
+                        <p class="pe1">Rocky</p><br><br>
+                        <p class="pee1">Po ra babu</p>
+                        <span class="peee1">3:09pm</span>
+
+                    
+                    
+                    </div>
+                    <div class="chat6"><img class="per1"   src="./images/avathar.jpg" alt="" height="60px" width="60px">
+                        <p class="pe1">Avinash</p><br><br>
+                        <p class="pee1">you are awesome broo</p>
+                        <span class="peee1">11:15am</span>
+
+                    </div>
+                    <div class="chat7"><img class="per1"   src="./images/shopify.jpg" alt="" height="60px" width="60px">
+                        <p class="pe1">Shopify</p><br><br>
+                        <p class="pee1">You can shop here</p>
+                        <span class="peee1">10:50am</span>
+
+                    
+                    </div>
+                    <div class="chat8"><img class="per1"   src="./images/ntr.jpg" alt="" height="60px" width="60px">
+                        <p class="pe1">Nageshwar rao</p><br><br>
+                        <p class="pee1">vijay devarakonda ra</p>
+                        <span class="peee1">10:02am</span>
+
+                    
+                    </div>
+                    <div class="chat9"><img class="per1"   src="./images/rock.jpg" alt="" height="60px" width="60px">
+                        <p class="pe1">Ravi</p><br><br>
+                        <p class="pee1">Hey!!</p>
+                        <span class="peee1">9:40am</span>
+
+                    
+                    </div>
+                    <div class="chat10"><img class="per1"   src="./images/air.jpg" alt="" height="60px" width="60px">
+                        <p class="pe1">Nagarjuna</p><br><br>
+                        <p class="pee1">Hmm</p>
+                        <span class="peee1">Yesterday</span>
+
+                    
+                    </div>
+                    <div class="chat11"><img class="per1"   src="./images/prabhas.jpg" alt="" height="60px" width="60px">
+                        <p class="pe1">Bablu ksdm</p><br><br>
+                        <p class="pee1">Podam paa ra</p>
+                        <span class="peee1">Yesterday</span>
+
+                    
+                    </div>
+                    <div class="chat12"><img class="per1"   src="./images/pawan.jpg" alt="" height="60px" width="60px">
+                        <p class="pe1">Pavani</p><br><br>
+                        <p class="pee1">Ok raa babu</p>
+                        <span class="peee1">Sunday</span>
+
+                    
+                    </div>
+                    <div class="chat13"><img class="per1"   src="./images/drav1.jpg" alt="" height="60px" width="60px">
+                        <p class="pe1">Prashanth</p><br><br>
+                        <p class="pee1">Aditya gaadey ra mottham</p>
+                        <span class="peee1">Saturday</span>
+
+                    
+                    </div>
+                   
+
+            </div>
+           
+               
+        </div>
       
     </div>
    
