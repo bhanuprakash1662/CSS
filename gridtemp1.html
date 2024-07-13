@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <style>
+        .outer{
+            height:1000px;
+            width: 100vw;
+            border: 1px solid black;
+            overflow-y: scroll;
+          
+        }
+        .menu{
+            height: 80px;
+            width: 100vw;
+            border: 1px solid white;
+            background-color: white;
+            position:sticky;
+           
+            top: 0px;
+
+        }
+        .container{
+            display: grid;
+            row-gap: 50px;
+            grid-template-columns:250px 250px 250px 250px;
+            grid-template-rows: 500px 500px 500px 500px;
+            justify-content: center;
+            
+            justify-content: space-evenly;
+        }
+        .item{
+            background-color: white;
+        }
+        .imgbox{
+            margin-left: 260px;
+            margin-top: -900px;
+            border: 1px solid white;
+            height: 500px;
+            width: 800px;
+           background-color:white;
+
+          
+           
+        }
+        .scontainer{
+            display: grid;
+            grid-template-columns: 380px 380px 380px ;
+            background-color:white;
+            grid-template-rows: 100px 100px 100px ;
+            gap: 10px;
+            justify-content: center;
+        }
+        .m1,.m2,.m3,.m4,.m5,.m6,.m7,.m8,.m9{
+            background-color: white;
+        }
+        .m4{
+            grid-row: 2/4;
+        }
+        .m6{
+            grid-column: 3/4;
+          
+           
+        }
+        .m6{
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto ;
+            grid-template-rows: 30px 30px ;
+            gap: 10px;
+           
+        }
+        .k{
+            background-color: black;
+          
+            
+        }
+        .p1{
+            color: white;
+        }
+        .m1,.m2,.m3{
+             font-size: 40px;
+        }
+        p{
+            margin-left: 100px;
+            margin-top: 10px;
+            z-index: 9;
+            font-size: 20px;
+        }
+        img{
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: -60px;
+            margin-left: 10px;
+           
+        }
+        span{
+            margin-left: 100px;
+        }
+        .img1{
+            margin-left: -1px;
+            margin-top: 1px;
+        }
+        .foodimg{
+            margin-top: 1px;
+            margin-left: 1px;
+        }
+        .foodtext{
+            margin-left: 20px;
+            margin-top: -10px;
+            font-size: 15px;
+        }
+       h4{
+        font-size: 18px;
+       }
+       h2{
+        margin-left: 450px;
+        width: 500px;
+       }
+       .gh{
+        font-size: 8px;
+        opacity: 0.6;
+       }
+       h3{
+        font-size:20px ;
+       }
+       .bar{
+        font-size: 40px;
+        margin-left: 60px;
+       }
+       .p10{
+        margin-top: -80px;
+        margin-left: 600px;
+        font-size: 30px;
+       }
+       .p11{
+        margin-top: -60px;
+        margin-left: 1200px;
+        font-size: 30px;
+       }
+       .item:hover{
+        box-shadow: 10px 10px 10px;
+       }
+      
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="menu">
+           <p class="bar" ><ion-icon name="menu-outline"></ion-icon></p>
+           <p class="p10">My Food</p>
+           <p class="p11">Mail</p>
+        </div><br>
+        <div class="container">
+            <div class="item1 item"> <img class="foodimg" src="./images/sandwich.jpg" height="350px" width="250px" alt="">
+                <h4>The Perfect Sandwich, A Real NYC Classic</h4><p class="foodtext">Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            </div>
+            <div class="item2 item"><img  class="foodimg" src="./images/lipsum.jpg" height="350px" width="250px" alt="">
+                <h4>Let Me Tell You About This Steak</h4><p class="foodtext">Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum</p>
+            </div>
+            <div class="item3 item"><img class="foodimg"  src="./images/cherries.jpg" height="350px" width="250px" alt="">
+                <h4>Cherries, interrupted</h4><p class="foodtext">Lorem ipsum text praesent tincidunt ipsum lipsum.</p>What else?
+            </div>
+            <div class="item4 item"><img class="foodimg"  src="./images/pasta.jpg" height="350px" width="250px" alt="">
+                <h4>Once Again, Robust Wine and Vegetable Pasta</h4><p class="foodtext">Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            </div>
+            <div class="item5 item"><img  class="foodimg" src="./images/icecream.jpg" height="350px" width="250px" alt="">
+                <h4>All I Need Is a Popsicle</h4><p class="foodtext">Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            </div>
+            <div class="item6 item"><img  class="foodimg" src="./images/salmon.jpg" height="350px" width="250px" alt="">
+                <h4>Salmon For Your Skin
+                </h4><p class="foodtext">Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            </div>
+            <div class="item7 item"><img  class="foodimg" src="./images/sandwich.jpg" height="350px" width="250px" alt="">
+                <h4>The Perfect Sandwich, A Real Classic</h4><p class="foodtext">Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            </div>
+            <div class="item8 item"><img  class="foodimg" src="./images/french.jpg" height="350px" width="250px" alt="">
+                <h4>Le French</h4><p class="foodtext">Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            </div>
+            <h2>About Me, The Food Man</h2>
+           </div>
+       
+           <div class="imgbox">
+            <img class="img1"  src="./images/chef.jpg" height="500px"  width="800px">
+           </div><br><br>
+           
+        <div class="gh"><center><h1>I am Who I Am!</h1></center>
+            <span><center><h3>With Passion For Real, Good Food</h3></center></span>
+            <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of 
+                lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus 
+                ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. 
+                Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies 
+                congue gravida diam non fringilla.</p>
+                <br><br><br>
+                <br><br><hr><br>
+                <br><br><br>
+        </div>
+        <div class="scontainer">
+            <div class="m1 "> FOOTER</div>
+            <div class="m2 ">BLOG POSTS</div>
+            <div class="m3 ">POPULAR TAGS</div>
+            <div class="m4 ">Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.<br><br>Powered by w3.css</div>
+            <div class="m5 ">
+                <p>Lorem</p><span>Sed mattis nunc</span>
+                <img class="img"  src="./images/lorem.jpg" height="80px" width="80px" alt="">
+               
+            </div>
+            <div class="m6 ">
+                <div class="p1 k">Travel</div>
+                <div class="p1 k">New York</div>
+                <div class="p1 k">Dinner</div>
+                <div class="p1 k">Salmon</div>
+                <div class="p1 k">France</div>
+                <div class="p1 k">Drinks</div>
+                <div class="p1 k">Ideas</div>
+                <div class="p1 k">Flavors</div>
+                <div class="p1 k">Chicken</div>
+                <div class="p1 k">Dressing</div>
+                <div class="p1 k">Cuisine</div>
+                <div class="p1 k">Fried</div>
+                <div class="p1 k">Fish</div>
+                <div class="p1 k">Duck</div>
+              
+               
+            </div>
+            <div class="m7 ">
+                <p>Ipsum</p>
+                <span> Praes tinci sed</span>
+                <img src="./images/ipsum.jpg"  height="80px" width="80px">
+            </div>
+            <!-- <div class="m8 ">item8</div> -->
+            <!-- <div class="m9 ">item9</div> -->
+
+        </div>
+        <br><br><br>    
+   
+    </div>
+
+
+</body>
+</html>

@@ -8,36 +8,41 @@
 <style>
     .container{
         display: grid;
-        
+    
         grid-template-columns: 100px 100px 100px ;
+        grid-template-rows: 100px 100px 100px ;
        justify-content: center;
-        align-items: center;
-        gap: 20px;
+       
+        gap: 10px;
+        
     }
     .ch{
-        border: 2px solid black;
+        border: 1px solid black;
         background-color: brown;
+        background-size: contain;
+        
 
     }
     .hi{
         grid-column: 2/4;
     }
-  
-    .hk{
+    .hj{
         grid-row: 2/4;
     }
     .hl{
-        grid-row: 2/4;
+        grid-row: 2/4;  
+        grid-column: 3/4;
     }
+   
 </style>
 <body>
     <div class="container">
-        <div class="ch hh">child1</div>
-        <div  class="ch hi">child2</div>
-        <div  class="ch hj">child3</div>
-        <div  class="ch hk ">child4</div>
-        <div  class="ch hl">child5</div>
-        <div  class="ch hn">child6</div>
+        <div class="ch hh"><img  class="img"  src="./images/forest.jpg"  height="100px" width="100px"></div>
+        <div  class="ch hi"><img src="./images/water.jpg"  height="100px" width="220px" alt=""></div>
+        <div  class="ch hj"><img src="./images/sun.jpg" height="220px" width="100px" alt=""></div>
+        <div  class="ch hk "><img src="./images/soil.jpg" height="100px" width="100px" alt=""></div>
+        <div  class="ch hl"><img src="./images/air.jpg" height="220px" width="100px"alt=""></div>
+        <div  class="ch hn"><img src="./images/rock.jpg" height="100px" width="100px" alt=""></div>
     </div>
 </body>
 </html>
