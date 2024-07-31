@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS PROJECT</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <script src="../bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+    <script>
+        function myFunction() {
+           var element = document.body;
+           element.classList.toggle("dark-mode");
+        }
+        </script>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+     
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        .outer{
+        
+           width: 100vw;
+            border: 1px solid black;  
+            background-image: url(./images/back.jpg);
+            background-image: contain;
+            background-repeat:no-repeat ;
+            padding:5% 8%;
+        }
+        .menu{
+            display: flex ;
+           
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            font-size: 25px;
+        }
+        .menu1{
+            display: flex;
+            list-style: none;
+            gap:90px;
+        }
+        .main{
+            display: grid;
+            grid-template-columns:50% 50%;
+            grid-template-rows: 23% 23% 23% 23% 10%;
+            
+           
+           
+        }
+        .item{
+            
+          background-color: white;
+        }
+        .item2{
+            display: grid;
+            grid-template-rows: 35% 65%;
+            padding: 10%;
+        }
+        [class^=el]{
+            background-color:white;
+           
+        }
+        .el1{
+            justify-content: center;
+            color: rgb(98, 162, 206);
+            font-size: 220%;
+            
+        }
+        .btn1{
+            border: 1px solid rgb(98, 162, 206);
+            background-color: white;
+            height: 14%;
+            width: 40%;
+            color: rgb(86, 150, 209);
+           
+
+        }
+        .btn2{
+            height: 14%;
+            margin-left: 5%;
+            width: 40%;
+            background-color:rgb(98, 162, 206) ;
+            color: white;
+            border: 1px solid rgb(98, 162, 206);
+        }
+        .item3{
+            padding: 8%;
+        }
+        .el3b{
+            color:rgb(98, 162, 206);
+            margin-left: 10%;
+        }
+        .item6{
+            padding: 10%;
+        }
+        .el61,.el62,.el63{
+            padding: 2%;
+            width: 30%;
+            border: 1px solid black;
+            height: 40%;
+
+        }
+        .el61{
+            border: 1px solid rgb(98, 162, 206) ;
+            color:rgb(98, 162, 206);
+        }
+        .el62{
+            color: white;
+            background-color: rgba(112, 145, 36, 0.993);
+            border: 1px solid rgba(112, 145, 36, 0.993);
+        }
+        .el63{
+            color: white;
+            background-color: rgba(18, 104, 116, 0.966);
+            border: 1px solid rgba(18, 104, 116, 0.966) ;
+            }
+        .el6g{
+            gap: 6%;
+            display: flex;
+          }
+          .item7{
+            padding: 8%;
+          }
+          input[type = text]{
+            height: 40px;
+          }
+          input[type = email]{
+            height: 40px;
+          }
+          input[type = email]{
+            height: 40px;
+          }
+          input[type = submit]{
+            height: 40px;
+            width: 150px;
+          }
+          .item10{
+            padding: 10% 8%;
+          }
+          .el10b{
+            font-style: italic;
+          }
+          a{
+            text-decoration: none;
+            color: white;
+          }
+          .hh:hover{
+            border-top: 2px solid white;
+          }
+          .btn1:hover{
+            background-color:rgba(18, 104, 116, 0.966) ;
+            color: white;
+        }
+        .btn2:hover{
+            background-color: white;
+            color: black;
+        }
+        .el61:hover{
+            background-color:rgba(18, 104, 116, 0.966)  ;
+            color: white;
+        }
+        .el62:hover{
+            background-color: white;
+            color: black;
+        }
+        .el63:hover{
+            background-color: white;
+            color: black;
+        }
+        /*.item:hover{
+            box-shadow: 5px 5px 5px 5px;
+        }*/
+        @keyframes bhanu {
+            from{
+                transform:scale(1,1)
+            }
+           to{
+            transform: scale(1.1,1.1);
+           }
+        }
+        .item9,.item8,.item5 ,.item4,.item1{
+            animation-name: bhanu;
+            animation-duration:2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+        }
+        @keyframes meg {
+            50%{background-color: rgb(38, 86, 126); color: white; }
+            100%{
+                background-color: white; color: black;
+            }
+        }
+        .el1{
+         
+            animation-name: meg;
+          
+            animation-duration: 2s;
+            animation-direction: reverse;
+            animation-iteration-count: infinite;
+        }
+        @keyframes aa{
+            50%{
+                width: 55%; background-color: rgb(12, 68, 121);
+            }
+            100%{
+                width: 100%; background-color: rgb(12, 68, 121);
+            }
+        }
+        .el10a,#Clients,#contact, #Services{
+            animation-name:aa;
+            animation-duration: 2s;
+            animation-direction: alternate-reverse;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+
+        }
+        
+        @media  screen and (min-width: 0px) and (max-width: 425px){ 
+            .menu,.menu1{
+                flex-direction: column;
+                row-gap:10px ;
+                
+            }
+            .main{
+                display: grid !important;
+                grid-template-columns:100% !important;
+                grid-template-rows: auto auto auto auto auto auto auto auto auto auto  !important;
+               
+                
+               
+               
+            }
+            .item2{
+                display: grid;
+                grid-template-rows: 35% 65%;
+                
+            }
+            .menu{
+                display: flex ;
+               
+                justify-content: start;
+                align-items: center;
+                color: white;
+                font-size: 15px;
+            }
+            .menu1{
+                display: flex;
+                list-style: none;
+                
+            }
+            body{
+        
+                 width: 100%;
+                 height: 100%;
+                 background-image: url("./images/back.jpg");
+                 background-size: cover;
+              
+                
+             }
+             .textarea{
+                width:80%;
+             }
+           
+            
+           
+        }
+         
+          
+         
+    </style>
+
+</head>
+<body>
+
+<div class="outer">
+    <div class="menu">
+        <h1 style="font-size: 50px;">Puzzle</h1>
+        <ul class="menu1">
+            <a class="hh" href="#Home">Home</a>
+            <a class="hh" href="#Services">Services</a>
+            <a class="hh" href="#Clients">Clients</a>
+            <a class="hh" href="#external">external</a>
+            <a class="hh" href="#contact">Contact</a>
+           
+        </ul>
+    </div>
+    <br><br>
+    <div class="main">
+        <div class="item item1"><img src="./images/1.jpg" height="100%" width="100%" alt=""></div>
+        <div  class="item item2">
+            <div id="Home" class="el1" ><br>Puzzle Bootstrap Template</div>
+            <div style="font-style: italic;" class="el2"><br>
+                Puzzle is a Bootstrap (13.3.6) responsive template provided by <span style="color: rgb(82, 206, 223);">templatemo</span>. You can download,edit and use this layout for absolutely free of charge.<br><br>
+                <p> No backlink is required to use this template. Credit goes to <span style="color: rgb(127, 222, 235);">Unsplash</span> for images used in this layout.</p><br><br>
+                <button class="btn1">Big Button</button><button class="btn2">Download</button>
+            </div>
+        </div>
+        <item  class="item item3">
+            <h2 id="Services">Quilityn Services</h2>
+            <div  style="font-style: italic;" class="el3a" >Morbi auctor tristique mattis. Vestibulum vitae sapien a ligula mollis ullamcorper ac a nisi. Ut a dignissim est, sodales pellentesque purus. Pellentesque porttitor ante at nulla ornare, eget sagittis sapien pulvinar. In semper mi ut enim mollis, ut auctor lectus posuere.</el3a></div><br>
+            <div style="font-style: italic;" class="el3b">
+                + Cras id dui eu tortor eleifend gravida<br>
+                + Maecenas tempus nisi in arcu<br>
+                + Nulla eget sem sit amet turpis tempus<br>
+                + Crasvel eros id ipsum accumsan<br>
+            </div>
+            </el3b><br>
+            <el3c style="font-style: italic;"> Nulla odio nunc, rhoncus quis porttitor quis, convallis sed tortor. Quisque dui mews, euismod vel sapien at, maximus feugiat tellus.</el3c><br><br>
+            <el3d style="font-style: italic;">Curabitur vel rutrum augue, id tristique diam. Sed imperdiet quis ipsum a vulputate. Suspendisse sit amet nibh mi.</el3d>
+        </item>
+        <item  class="item item4"><img src="./images/2.jpg"   height="100%" width="100%" alt=""></item>
+        <item  class="item item5"><img src="./images/3.jpg"  height="100%" width="100%" alt=""></item>
+        <item  class="item item6">
+            <div class="el6a"><h3 id="Clients">Our Clients</h3></div><br>
+            <div style="font-style: italic;"  class="el6b">Maecenas tempus nisi in arcu facilisis venenatis. Fusce ac turpis sem. Nulla eget sem sit amet turpis tempus viverra at et odio. Crasvel eros id ipsum accumsan venenatis ut nec ipsum.</div><br>
+            <div style="font-style: italic;" class="el6c">Nulla odio nunc, rhoncus quis porttitor quis, convallis sed tortor. Quisque dui metus, euismod vel sapien at, maximus feugiat tellus.</div><br>
+            <div style="font-style: italic;" class="el6d">Curabitur vel rutrum augue, id tristique diam. Sed imperdiet quis ipsum a vulputate. Suspendisse sit amet nibh mi. In quis sapien a metus interdum hendrerit.</div><br>
+            <div style="font-style: italic;" class="el6f">Ut a dignissim est, sodales pellentesque purus. Pellentesque porttitor ante at nulla ornare, eget sagittis sapien pulvinar.</div><br>
+            <div class="el6g">
+                <button class="el61">Small Button</button>
+                <button class="el62">Download</button>
+                <button class="el63">Demo</button>
+            </div>
+        </item>
+        <item  class="item item7">
+            <div class="el7a"><h3 id="contact">Contact Us</h3></div>
+            <div style="font-style: italic;" class="el7b">Nulla eget sem sit amet turpis tempus viverra at et odio. Cras vel eros id ipsum accumsan venenatis ut nec ipsum.</div><br>
+            <div class="el7c">
+                <form>
+                    <input  size="25%" type="text"  placeholder=" Your Name...">
+                    <input  size="25%" type="email" placeholder=" Your Email..."><br><br>
+                    <input type="text"class="textarea"  size="56.9%" placeholder="Your Subject..."><br><br>
+                   
+                     <textarea class="textarea" name="message" id="message" cols="60"  rows="6" placeholder="Write your message...."></textarea><br><br>
+                    <input  style="background-color:white ;" type="submit">
+
+                </form>
+            </div>
+        </item>
+        <item  class="item item8"><img src="./images/4.jpg"  height="100%" width="100%" alt=""></item>
+        <item  class="item item9"><img src="./images/5.png"  height="100%" width="100%" alt=""></item>
+        <item  class="item item10">
+            <div class="el10a"><h3>About This Website</h3></div><br>
+            <div class="el10b">Puzzle Template is brought to you by templatemo. Sed imperdiet quis ipsum a vulputate. Suspendisse sit amet nibh mi. In quis sapien a metus interdum hendrerit.</div>
+        </item>
+    </div>
+   
+</div>
+   
+</body>
+</html>
